@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="517.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc311finalproject.DashboardController">
+   <children>
+       <TableView fx:id="clientsTable" layoutX="133.0" layoutY="3.0" prefHeight="503.0" prefWidth="609.0">
+           <columns>
+            <TableColumn fx:id="selectColumn" prefWidth="24.0">
+               <graphic>
+                  <CheckBox mnemonicParsing="false" />
+               </graphic>
+            </TableColumn>
+               <TableColumn fx:id="firstNameColumn" prefWidth="131.0000457763672" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" text="Last Name" />
+            <TableColumn fx:id="ssnColumn" prefWidth="43.666656494140625" text="SSN" />
+            <TableColumn fx:id="telephoneColumn" prefWidth="71.33328247070312" text="Phone" />
+            <TableColumn fx:id="emailColumn" prefWidth="98.6666259765625" text="Email" />
+            <TableColumn fx:id="addressColumn" prefWidth="95.99996948242188" text="Address" />
+            <TableColumn fx:id="cityColumn" prefWidth="57.33331298828125" text="City" />
+            <TableColumn fx:id="stateColumn" prefWidth="37.6666259765625" text="State" />
+            <TableColumn fx:id="zipColumn" prefWidth="43.33331298828125" text="Zip" />
+               <!-- Add more TableColumn elements for additional client information -->
+           </columns>
+       </TableView>
+      <ImageView fx:id="imageLogo" fitHeight="150.0" fitWidth="134.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="addClientButton" layoutX="30.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleAddClientButtonAction" prefHeight="64.0" prefWidth="74.0">
+         <graphic>
+            <ImageView fx:id="addClientView" fitHeight="55.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <Button fx:id="removeClientButton" layoutX="30.0" layoutY="240.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="74.0">
+         <graphic>
+            <ImageView fx:id="removeClientView" fitHeight="55.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

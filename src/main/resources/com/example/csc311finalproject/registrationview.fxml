@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="368.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc311finalproject.RegistrationController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="368.0" prefWidth="346.0" spacing="10">
+          <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Registration" />
+          <TextField fx:id="firstNameField" promptText="First Name">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+         </TextField>
+          <TextField fx:id="lastNameField" promptText="Last Name">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+         </TextField>
+          <TextField fx:id="usernameField" promptText="Username">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+         </TextField>
+          <PasswordField fx:id="passwordField" promptText="Password">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+         </PasswordField>
+          <TextField fx:id="emailField" promptText="Email">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+         </TextField>
+          <TextField fx:id="zipCodeField" promptText="ZIP Code">
+            <VBox.margin>
+               <Insets left="50.0" right="50.0" />
+            </VBox.margin>
+         </TextField>
+          <Button fx:id="registerButtonTwo" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="123.0" text="Register" />
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="474.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc311finalproject.FormController">
+   <children>
+      <ImageView fx:id="formImageView" fitHeight="541.0" fitWidth="485.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/Form.png" />
+         </image></ImageView>
+   <Label fx:id="firstNameLabel" layoutX="4.0" layoutY="68.0" prefHeight="17.0" prefWidth="172.0" />
+   <Label fx:id="lastNameLabel" layoutX="189.0" layoutY="67.0" prefHeight="17.0" prefWidth="194.0" />
+   <Label fx:id="ssnLabel" layoutX="388.0" layoutY="67.0" prefHeight="17.0" prefWidth="89.0" />
+   <Label fx:id="addressLabel" layoutX="4.0" layoutY="110.0" prefHeight="17.0" prefWidth="332.0" />
+   <Label fx:id="cityLabel" layoutX="21.0" layoutY="132.0" prefHeight="17.0" prefWidth="239.0" />
+   <Label fx:id="stateLabel" layoutX="272.0" layoutY="132.0" prefHeight="17.0" prefWidth="51.0" />
+   <Label fx:id="zipLabel" layoutX="333.0" layoutY="132.0" prefHeight="17.0" prefWidth="51.0" />
+   </children>
+</AnchorPane>
